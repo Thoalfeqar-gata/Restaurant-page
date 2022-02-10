@@ -1,0 +1,214 @@
+:root{
+    --dark-brown: #534A40;
+    --light-green: #5EE383;
+    --primary-light-brown: #F6F8EA; 
+    --secondary-light-brown: #c08a16;
+}
+
+*
+{
+    font-family : sans-serif;
+}
+
+body
+{
+    margin : 0px;
+    height : 100vh;
+    background-image : url("./pexels-pixabay-262978.jpg");
+    background-size : cover;
+    background-attachment : fixed;
+}
+
+main
+{
+    display: flex;
+    justify-content : center;
+}
+
+a
+{
+    display : inline;
+    font-size : bold;
+    color : rgb(255, 129, 0);
+}
+
+#content 
+{
+    display : flex;
+    flex-direction : column;
+    justify-content : space-between;
+    height : 100%;
+}
+/*header*/
+.header
+{
+    display : flex;
+    flex-direction : column;
+    justify-content : space-between;
+    align-items : center;
+    padding : 0px 20px 5px;
+    background-color : rgba(246, 248, 234, 0.822);
+}
+
+.tabs
+{
+    margin: 10px;
+}
+.logo
+{
+    display : flex;
+    align-items : center; 
+    color : var(--secondary-light-brown);
+    font-size : 32px;
+    font-weight : 550;
+    padding-right : 20px;
+}
+
+
+.contactTab, .menuTab, .homeTab
+{
+   background : none;
+   border : none;
+   padding : 0; 
+   color : rgb(219, 118, 36);
+   font-size : 28px;
+   font-weight : 550;
+   border-bottom : 3px solid transparent;
+   margin : 0px 40px;
+   transition : 200ms;
+}
+
+.homeTab:hover
+{
+    cursor : pointer;  
+    transform : translateY(-15%); 
+}
+
+.menuTab:hover
+{
+    cursor : pointer; 
+    transform : translateY(-15%);   
+}
+
+.contactTab:hover
+{
+    cursor : pointer;  
+    transform : translateY(-15%);  
+}
+
+.active
+{
+    border-bottom : 3px solid rgb(219, 118, 36);
+}
+
+
+
+/*home*/
+.home
+{
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    padding : 15px;
+    gap : 10%;
+
+    flex-grow : 1;
+}
+
+
+.welcomeContainer
+{
+    background-color :rgba(0, 0, 0, 0.767);
+    padding : 20px;
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+    justify-content : center;
+}
+.welcomeContainer > h1
+{
+    font-size : 50px;
+    text-align : center;
+    color : rgb(255, 129, 0);
+}
+
+.welcomeContainer > p
+{
+    font-size : 25px;
+    text-align : center;
+    color : rgb(255, 129, 0);
+}
+
+/* food menu */
+
+.menu
+{
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    padding : 15px;
+}
+.menuCard > img
+{
+    padding : 10px;
+    width : 50%;
+    min-width: 100px;
+    border-radius : 50%;
+}
+.menuCard
+{
+    text-align : center;
+    color : rgb(219, 118, 36);
+    border : 1px solid black;
+    font-size : 20px;
+    display : flex;
+    flex-direction : column;
+    justify-content : center;
+    align-items : center;
+    background-color : rgba(255, 255, 255, 0.15);
+    max-width : 500px;
+    padding : 10px;
+    transition-duration : 400ms;
+}
+
+.menuCard:hover
+{
+    color : rgb(255, 115, 0);
+    background-color : rgba(255, 255, 255, 0.4);
+}
+
+.menuBackground
+{
+    padding : 50px;
+    background-color : rgba(0, 0, 0, 0.767);
+    border : 2px solid black;
+    display : flex;
+    flex-direction : row;
+    flex-wrap: wrap;
+    justify-content : center;
+    gap : 15px;
+    width : 65%;
+}
+
+/* contact tab*/
+
+.contactBackground
+{
+    padding : 18px;
+    color : rgb(255, 129, 0);
+    text-align : center;
+    font-size : 32px;
+    background-color : rgba(0, 0, 0, 0.8);
+}
+
+/*footer*/
+.footer
+{
+    background-color : var(--dark-brown);
+    display : flex;
+    padding : 20px;
+    font-size : 24px;
+    justify-content : center;
+    align-items : center;
+    color : white;
+}
